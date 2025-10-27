@@ -124,7 +124,7 @@
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> อยากได้คนรุ่นใหม่เก่งๆ เข้าทีม... แต่ไม่รู้จะดึงดูดเขายังไงในเมื่อเรายังดู "เก่า"</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> เห็นทีมอื่นใช้ AI ทำงานแล้วล้ำหน้าไปไกล... แต่ทีมเรายัง ใช้ไม่เป็น</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> เหนื่อยกับการต้องสอนงานซ้ำๆ ในเรื่องเดิมๆ โดยเฉพาะเรื่องออนไลน์</li>
-                        <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> อยากสร้าง "วัฒนธรรมองค์กร" ที่ทันสมัย ดึงดูดคนเก่งให้อยากอยู่ด้วยนานๆ</li>
+                        <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> อยากสร้าง "วัฒนธรรมองค์กร" ที่ทันสมัย ดึงดูD" คนเก่งให้อยากอยู่ด้วยนานๆ</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> ไม่มีเวลา พอที่จะไปศึกษาและลองผิดลองถูกเรื่องเครื่องมือออนไลน์ใหม่ๆ ด้วยตัวเอง</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> เห็นลูกทีม หมดไฟ เพราะหาลูกค้าไม่ได้ แต่ก็ไม่รู้จะช่วยเขายังไงเพราะตัวเองก็ทำออนไลน์ไม่เป็น</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> เรียนมาเยอะจน "มึน" ไม่รู้ว่าสุดท้ายแล้วอะไรคือสิ่งที่ "สำคัญที่สุด" ที่ต้องทำจริงๆ เพื่อให้ทีมรอดในยุคนี้</li>
@@ -172,11 +172,18 @@
         <section class="section-padding theme-bg"> <!-- ใส่กลับมาแล้วครับ -->
             <div class="max-w-5xl mx-auto text-center">
                 <h3 class="text-3xl md:text-4xl font-bold mb-10">รับชม VDO ระบบ Agent Fluencer</h3>
-                <div class="flex justify-center">
-                    <!-- YouTube Short (9:16 aspect ratio) -->
-                    <div class="w-full max-w-[340px] mx-auto rounded-lg overflow-hidden shadow-xl border-4 border-white">
+                <div class="flex flex-wrap justify-center gap-8"> <!-- Changed to flex-wrap and gap -->
+                    <!-- YouTube Short 1 (Original) -->
+                    <div class="w-full max-w-[340px] rounded-lg overflow-hidden shadow-xl border-4 border-white">
                         <div class="aspect-[9/16] w-full">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/mTYtFJAc47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- YouTube Short 2 (New) -->
+                    <div class="w-full max-w-[340px] rounded-lg overflow-hidden shadow-xl border-4 border-white">
+                        <div class="aspect-[9/16] w-full">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/HDP7pPrDRbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -185,11 +192,21 @@
 
         <!-- 6. Content Example Video -->
         <section class="section-padding bg-gray-900">
-            <div class="max-w-5xl mx-auto text-center">
+            <div class="max-w-7xl mx-auto text-center"> <!-- Changed max-w-5xl to max-w-7xl to fit both videos -->
                 <h3 class="text-3xl md:text-4xl font-bold mb-10">ทำให้คุณ และทีมงาน สามารถสร้างคอนเทนต์ออนไลน์ได้แบบนี้</h3>
-                <div class="aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
-                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/sOmo4Bcomyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <!-- Changed to a grid layout for two videos -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Video 1 (Original) -->
+                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
+                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/sOmo4Bcomyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <!-- Video 2 (New) -->
+                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
+                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/YerE9QAxMgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
+
             </div>
         </section>
         
@@ -284,13 +301,13 @@
                         <ul class="text-left space-y-3 text-gray-300 flex-grow">
                             <li class="flex"><span class="theme-text mr-3">▶</span> เข้าถึงระบบ The Agent-fluencer: เครื่องมือ AI</li>
                             <li class="flex"><span class="theme-text mr-3">▶</span> คู่มือการใช้งาน "The Agent-fluencer"</li>
-                            <li class="flex"><span class="theme-text mr-3">▶</span> เวิร์คช็อปและแบบฝึกหัด จับมือทำ</li>
+                            <li class="flex"><span class="theme-text mr-3">▶</span> เวิร์คช็อปและแบบฝึกหัด ผ่านออนไลน์</li>
                             <li class="flex"><span class="theme-text mr-3">▶</span> กลุ่ม VIP พิเศษสำหรับ ถาม-ตอบ</li>
                         </ul>
                         <div class="mt-8">
                             <p class="text-gray-400">มูลค่า: <span class="line-through">5,000</span> บาท</p>
                             <p class="text-4xl font-bold my-2 highlight-text">เพียง 2,900 บาท</p>
-                            <p class="text-sm text-gray-400">สำหรับ 100 ท่านแรก</p>
+                            <p class="text-sm text-gray-400">สำหรับ 30 ท่านแรก</p>
                         </div>
                         <div class="mt-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
                              <p class="font-bold text-amber-400">🎁 โบนัสพิเศษ!</p>
@@ -308,9 +325,10 @@
                         <p class="text-xl font-semibold mt-2 text-white">Agent-fluencer VIP Bootcamp: 1-Day Intensive</p>
                          <p class="text-sm text-gray-400 mt-2 mb-6 h-12">(ต้องการทางลัด? ปลดล็อกศักยภาพสูงสุดใน 1 วัน กับพี่หมีโดยตรง!)</p>
                         <ul class="text-left space-y-3 text-gray-300 flex-grow">
-                            <li class="flex"><span class="theme-text mr-3">▶</span> เวิร์คช็อปสด 1 วันเต็ม (Private Coaching)</li>
+                            <li class="flex"><span class="theme-text mr-3">▶</span> เวิร์คช็อปสดตัวเป็น ๆ 1 วันเต็ม (Private Coaching)</li>
                             <li class="flex"><span class="theme-text mr-3">▶</span> วิเคราะห์และวางกลยุทธ์ Brand OS เฉพาะบุคคล</li>
                             <li class="flex"><span class="theme-text mr-3">▶</span> ติดตั้งและใช้งานระบบฯ แบบจับมือทำ</li>
+                            <li class="flex"><span class="theme-text mr-3">▶</span> มีช่องทางออนไลน์แบบมืออาชีพ </li>
                             <li class="flex"><span class="theme-text mr-3">▶</span> ถาม-ตอบทุกข้อสงสัยแบบ เจาะลึก</li>
                             <li class="flex"><span class="theme-text mr-3">▶</span> กลุ่ม VIP พิเศษสำหรับ ถาม-ตอบ</li>
                         </ul>
@@ -335,9 +353,12 @@
                         <p class="text-xl font-semibold mt-2 text-white">Agent-fluencer Team Accelerator: In-House Workshop</p>
                         <p class="text-sm text-gray-400 mt-2 mb-6 h-12">(ปฏิวัติทีมของคุณ! สร้าง "สายพานการผลิต" ตัวแทนออนไลน์คุณภาพสูง ยกทีม!)</p>
                         <ul class="text-left space-y-3 text-gray-300 flex-grow">
-                             <li class="flex"><span class="theme-text mr-3">▶</span> เวิร์คช็อปสด 1 วันเต็ม สำหรับทีม/องค์กร</li>
-                             <li class="flex"><span class="theme-text mr-3">▶</span> ทุกอย่างเหมือนแพ็กเกจ 2 แต่จัดสำหรับทีม</li>
-                             <li class="flex"><span class="theme-text mr-3">▶</span> สร้างมาตรฐานเดียวกัน และประหยัดเวลาสอน</li>
+                             <li class="flex"><span class="theme-text mr-3">▶</span> เวิร์คช็อปสด 1 วันเต็ม สำหรับทีม/องค์กร (In-House Training)</li>
+                             <li class="flex"><span class="theme-text mr-3">▶</span> วิเคราะห์และวางกลยุทธ์ Brand OS เฉพาะบุคคล</li>
+                             <li class="flex"><span class="theme-text mr-3">▶</span> ติดตั้งและใช้งานระบบฯ แบบจับมือทำ</li>
+                             <li class="flex"><span class="theme-text mr-3">▶</span> ทุกคนในทีมจะมีช่องทางออนไลน์แบบมืออาชีพ ที่ไม่เหมือนกัน</li>
+                             <li class="flex"><span class="theme-text mr-3">▶</span> ถาม-ตอบทุกข้อสงสัยแบบ เจาะลึก</li>
+                             <li class="flex"><span class="theme-text mr-3">▶</span> กลุ่ม VIP พิเศษสำหรับ ถาม-ตอบ</li>
                         </ul>
                          <div class="mt-8">
                             <p class="text-gray-400">ราคาปกติสำหรับ 5 ท่าน: <span class="line-through">75,000</span> บาท</p>
@@ -379,11 +400,6 @@
 
 </body>
 </html>
-
-
-
-
-
 
 
 
