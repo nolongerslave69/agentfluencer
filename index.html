@@ -192,16 +192,23 @@
 
         <!-- 6. Content Example Video -->
         <section class="section-padding bg-gray-900">
-            <div class="max-w-7xl mx-auto text-center"> <!-- Changed max-w-5xl to max-w-7xl to fit both videos -->
+            <div class="max-w-7xl mx-auto text-center"> <!-- max-w-7xl is correct for 3 videos -->
                 <h3 class="text-3xl md:text-4xl font-bold mb-10">ทำให้คุณ และทีมงาน สามารถสร้างคอนเทนต์ออนไลน์ได้แบบนี้</h3>
                 
-                <!-- Changed to a grid layout for two videos -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                    <!-- Video 1 (Original) -->
+                <!-- Updated to a 3-column grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto"> <!-- Changed to md:grid-cols-3 -->
+                    
+                    <!-- Video 1 (NEW) -->
+                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
+                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/5Ehfb2EloGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Video 2 (Original 1) -->
                     <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
                          <iframe class="w-full h-full" src="https://www.youtube.com/embed/sOmo4Bcomyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <!-- Video 2 (New) -->
+                    
+                    <!-- Video 3 (Original 2) -->
                     <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
                          <iframe class="w-full h-full" src="https://www.youtube.com/embed/YerE9QAxMgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -400,6 +407,7 @@
 
 </body>
 </html>
+
 
 
 
