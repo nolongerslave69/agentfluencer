@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- === 1. ADDED AOS CSS === -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- === END AOS CSS === -->
+
     <style>
         body {
             font-family: 'Kanit', sans-serif;
@@ -69,7 +74,8 @@
     <main>
         <!-- 1. Hero Section -->
         <section class="gradient-bg section-padding text-center">
-            <div class="max-w-4xl mx-auto">
+            <!-- Added data-aos -->
+            <div class="max-w-4xl mx-auto" data-aos="fade-up">
                 <h2 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
                     คอร์สสุดท้าย... <!-- เปลี่ยนจาก "เครื่องมือ" -->
                 </h2>
@@ -82,36 +88,38 @@
 
         <!-- 2. Agent's Problems Section -->
         <section class="section-padding bg-gray-900">
-            <div class="max-w-5xl mx-auto">
+            <!-- Added data-aos -->
+            <div class="max-w-5xl mx-auto" data-aos="fade-up">
                 <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">คุณเป็น <span class="highlight-text">ตัวแทน</span> ที่กำลังเจอปัญหานี้อยู่รึเปล่า?</h3>
                 <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">ถ้าอ่านแล้วไม่ใช่ปัญหาของคุณ ปิดไปได้เลย!</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300">
-                    <div class="card p-6 rounded-lg">อึดอัดกับระบบเก่า ที่บังคับให้โทรหาคนรู้จัก ทั้งๆ ที่กูก็ไม่ได้อยากโทร</div>
-                    <div class="card p-6 rounded-lg">สุดท้ายกลั้นใจโทรไป เขาก็ไม่อยากคุยด้วย</div>
-                    <div class="card p-6 rounded-lg">รายชื่อหมด! โทรหาใครก็โดนปฏิเสธ รู้สึกเหมือนเป็นตัวน่ารำคาญ</div>
-                    <div class="card p-6 rounded-lg">รู้ว่าต้องทำออนไลน์ แต่ ไม่รู้จะเริ่มยังไง จับต้นชนปลายไม่ถูก?</div>
-                    <div class="card p-6 rounded-lg">เปิดเพจแล้วแต่โพสต์อะไรไปก็เงียบ ติดตามกูทุกคน ยกเว้นลูกค้า</div>
-                    <div class="card p-6 rounded-lg">คิดคอนเทนต์ไม่ออก สมองตัน ไม่รู้จะเล่าเรื่องประกันยังไงให้น่าสนใจ</div>
-                    <div class="card p-6 rounded-lg">คอนเทนต์ที่ทำออกมามันดู "กากๆ" ไม่โปร อายไม่กล้าแชร์</div>
-                    <div class="card p-6 rounded-lg">กลัวหน้ากล้อง พูดไม่เก่ง อัดคลิปทีไรยังกะหุ่นยนต์</div>
-                    <div class="card p-6 rounded-lg">ตัดต่อวิดีโอไม่เป็น ทำเ..ย ไรไม่เป็นสักกะอย่าง</div>
-                    <div class="card p-6 rounded-lg">บอกตัวเองว่าไม่เก่งเทคโนโลยี แต่เล่นโซเชี่ยลคล่องชิปหาย</div>
-                    <div class="card p-6 rounded-lg">เห็นคนอื่นทำออนไลน์แล้วปัง แต่พอเป็นเรา ทำไมมันยากจังวะ</div>
-                    <div class="card p-6 rounded-lg">เห็น AI แล้วก็ งง... ไม่รู้จะใช้ทำอะไร ให้เป็นประโยชน์กับงานจริงๆ</div>
-                    <div class="card p-6 rounded-lg">ทำคอนเทนต์ไปสักพักก็ ท้อ... เพราะไม่เห็นผลลัพธ์ เป็นรูปธรรม?</div>
-                    <div class="card p-6 rounded-lg">ลองยิงแอดแล้ว เสียเงินฟรี ไม่เห็นได้ลูกค้ากลับมาเลย</div>
-                    <div class="card p-6 rounded-lg">กลัวทำผิด กลัวทำแล้วไม่ดี กลัวคนวิจารณ์... เลย ไม่ได้เริ่มสักที</div>
+                    <!-- Added data-aos to cards -->
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="50">อึดอัดกับระบบเก่า ที่บังคับให้โทรหาคนรู้จัก ทั้งๆ ที่กูก็ไม่ได้อยากโทร</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="100">สุดท้ายกลั้นใจโทรไป เขาก็ไม่อยากคุยด้วย</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="150">รายชื่อหมด! โทรหาใครก็โดนปฏิเสธ รู้สึกเหมือนเป็นตัวน่ารำคาญ</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="50">รู้ว่าต้องทำออนไลน์ แต่ ไม่รู้จะเริ่มยังไง จับต้นชนปลายไม่ถูก?</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="100">เปิดเพจแล้วแต่โพสต์อะไรไปก็เงียบ ติดตามกูทุกคน ยกเว้นลูกค้า</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="150">คิดคอนเทนต์ไม่ออก สมองตัน ไม่รู้จะเล่าเรื่องประกันยังไงให้น่าสนใจ</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="50">คอนเทนต์ที่ทำออกมามันดู "กากๆ" ไม่โปร อายไม่กล้าแชร์</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="100">กลัวหน้ากล้อง พูดไม่เก่ง อัดคลิปทีไรยังกะหุ่นยนต์</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="150">ตัดต่อวิดีโอไม่เป็น ทำเ..ย ไรไม่เป็นสักกะอย่าง</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="50">บอกตัวเองว่าไม่เก่งเทคโนโลยี แต่เล่นโซเชี่ยลคล่องชิปหาย</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="100">เห็นคนอื่นทำออนไลน์แล้วปัง แต่พอเป็นเรา ทำไมมันยากจังวะ</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="150">เห็น AI แล้วก็ งง... ไม่รู้จะใช้ทำอะไร ให้เป็นประโยชน์กับงานจริงๆ</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="50">ทำคอนเทนต์ไปสักพักก็ ท้อ... เพราะไม่เห็นผลลัพธ์ เป็นรูปธรรม?</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="100">ลองยิงแอดแล้ว เสียเงินฟรี ไม่เห็นได้ลูกค้ากลับมาเลย</div>
+                    <div class="card p-6 rounded-lg" data-aos="zoom-in" data-aos-delay="150">กลัวทำผิด กลัวทำแล้วไม่ดี กลัวคนวิจารณ์... เลย ไม่ได้เริ่มสักที</div>
                 </div>
             </div>
         </section>
 
         <!-- 3. Manager's Problems Section -->
         <section class="section-padding">
-            <div class="max-w-5xl mx-auto">
+            <div class="max-w-5xl mx-auto" data-aos="fade-up">
                 <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">คุณเป็น <span class="highlight-text">ผู้จัดการ</span> ที่กำลังเจอปัญหานี้อยู่รึเปล่า?</h3>
                 <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">ถ้าอ่านแล้วไม่ใช่ปัญหาของคุณ ก็ปิดไปได้เลย!</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300">
-                    <ul class="space-y-4">
+                    <ul class="space-y-4" data-aos="fade-right">
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> อยากให้ทีมทำออนไลน์ แต่ ไม่รู้จะ "สอน" หรือ "เริ่ม" ยังไง เพราะตัวเองแม่งก็ยังงงๆ</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> ส่งลูกทีมไปเรียนออนไลน์ เสียเงินไปเยอะ แต่ไม่เห็นมีใคร "เกิด" สักราย</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> ลูกทีมรุ่นใหม่ อยู่ไม่นานก็ "ลาออก" เพราะหาลูกค้าออนไลน์ไม่ได้</li>
@@ -120,7 +128,7 @@
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> ไม่มี "ระบบ" ที่ชัดเจน ในการปั้นตัวแทนใหม่ให้เก่งออนไลน์ได้เหมือนๆ กัน</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> รู้สึกว่าทีมกำลังจะกลายเป็น "องค์กรไดโนเสาร์" ที่ตามโลกไม่ทัน?</li>
                     </ul>
-                    <ul class="space-y-4">
+                    <ul class="space-y-4" data-aos="fade-left">
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> อยากได้คนรุ่นใหม่เก่งๆ เข้าทีม... แต่ไม่รู้จะดึงดูดเขายังไงในเมื่อเรายังดู "เก่า"</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> เห็นทีมอื่นใช้ AI ทำงานแล้วล้ำหน้าไปไกล... แต่ทีมเรายัง ใช้ไม่เป็น</li>
                         <li class="flex items-start"><span class="text-red-500 mr-3 mt-1">●</span> เหนื่อยกับการต้องสอนงานซ้ำๆ ในเรื่องเดิมๆ โดยเฉพาะเรื่องออนไลน์</li>
@@ -135,18 +143,18 @@
 
         <!-- 4. The Solution -->
         <section class="section-padding bg-gray-900 text-center">
-            <div class="max-w-4xl mx-auto">
+            <div class="max-w-4xl mx-auto" data-aos="fade-up">
                  <h3 class="text-3xl md:text-4xl font-bold mb-4">ถ้าคุณกำลังเจอปัญหาแบบข้างบน... <span class="highlight-text">คุณมาถูกที่แล้วครับ</span></h3>
                 <p class="text-xl md:text-2xl text-gray-300 mb-8">นี่จะเป็นที่สุดท้าย ที่จะทำให้คุณแก้ปัญหาทั้งหมด</p>
                 <p class="text-lg text-gray-400 mb-8">เพราะ <span class="font-bold text-white text-xl">คอร์ส The Agent fluencer</span> ถูกออกแบบมาเพื่อช่วยตัวแทนประกัน ทำออนไลน์ ได้สำเร็จจริงๆ ซะที</p>
                 <div class="space-y-6 text-left max-w-2xl mx-auto">
                     <!-- ปรับข้อความเน้นว่า "คอร์ส" นี้ให้อะไร -->
-                    <p class="flex items-start"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณใช้ AI วิเคราะห์ สร้าง personal brand ได้เป๊ะ ตรงกับตัวตนคุณ</p>
-                    <p class="flex items-start"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณใช้ AI สร้างช่องทางออนไลน์ได้แบบมืออาชีพ ทุกแพลทฟอร์ม</p>
-                    <p class="flex items-start"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณใช้ AI สร้างคอนเทนท์อัตโนมัติ แบบมืออาชีพ ดึงดูดลูกค้า</D>
-                    <p class="flex items-start"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณสร้างผู้ติดตามคุณภาพ โดยไม่ต้องใช้เงินยิงแอดสักกะบาทเดียว</p>
+                    <p class="flex items-start" data-aos="fade-up" data-aos-delay="50"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณใช้ AI วิเคราะห์ สร้าง personal brand ได้เป๊ะ ตรงกับตัวตนคุณ</p>
+                    <p class="flex items-start" data-aos="fade-up" data-aos-delay="100"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณใช้ AI สร้างช่องทางออนไลน์ได้แบบมืออาชีพ ทุกแพลทฟอร์ม</p>
+                    <p class="flex items-start" data-aos="fade-up" data-aos-delay="150"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณใช้ AI สร้างคอนเทนท์อัตโนมัติ แบบมืออาชีพ ดึงดูดลูกค้า</D>
+                    <p class="flex items-start" data-aos="fade-up" data-aos-delay="200"><span class="theme-text text-2xl mr-3">✓</span> คอร์สที่สอนให้คุณสร้างผู้ติดตามคุณภาพ โดยไม่ต้องใช้เงินยิงแอดสักกะบาทเดียว</p>
                 </div>
-                <div class="mt-12 p-6 theme-bg rounded-lg shadow-2xl">
+                <div class="mt-12 p-6 theme-bg rounded-lg shadow-2xl" data-aos="zoom-in" data-aos-delay="300">
                     <!-- ปรับข้อความเน้น "คอร์ส" และ "แถมระบบ" -->
                     <p class="text-xl font-semibold">มันคือ <span class="highlight-text">คอร์สออนไลน์</span> ที่แถม <span class="highlight-text">ระบบ AI สายพานการผลิต</span> ตัวแทนออนไลน์คุณภาพสูง ที่จะนำพาตัวแทน 1 คน สามารถสร้างช่องทางออนไลน์ได้สำเร็จ ตั้งแต่ 0-100 โดยที่ไม่ต้องไปเรียนที่ไหนเพิ่มอีกแล้ว</p>
                 </div>
@@ -156,8 +164,8 @@
         <!-- NEW 4.5. What is Agent Fluencer (Diagram) -->
         <section class="section-padding">
             <div class="max-w-5xl mx-auto text-center">
-                <h3 class="text-3xl md:text-4xl font-bold mb-10">คอร์ส Agent Fluencer คืออะไร?</h3> <!-- เปลี่ยนจาก "ระบบ" -->
-                <div class="flex justify-center">
+                <h3 class="text-3xl md:text-4xl font-bold mb-10" data-aos="fade-up">คอร์ส Agent Fluencer คืออะไร?</h3> <!-- เปลี่ยนจาก "ระบบ" -->
+                <div class="flex justify-center" data-aos="zoom-in">
                     <!-- 
                       คำแนะนำ: 
                       1. ให้คุณเปลี่ยนชื่อไฟล์ "Clear Business Strategy.jpg" เป็น "agent-fluencer-flow.jpg" (เพื่อไม่ให้มีเว้นวรรค)
@@ -169,28 +177,28 @@
                 </div>
                 
                 <!-- === VIDEO ADDED HERE === -->
-                <div class="aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl mt-12">
+                <div class="aspect-video w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl mt-12" data-aos="zoom-in" data-aos-delay="200">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/5Ehfb2EloGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <!-- === END VIDEO === -->
+<!-- === END VIDEO === -->
 
             </div>
         </section>
 
         <!-- 5. VDO (Shorts Video) -->
         <section class="section-padding theme-bg"> 
-            <div class="max-w-5xl mx-auto text-center">
+            <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
                 <h3 class="text-3xl md:text-4xl font-bold mb-10">รับชม VDO คอร์ส Agent Fluencer</h3> <!-- เปลี่ยนจาก "ระบบ" -->
                 <div class="flex flex-wrap justify-center gap-8"> 
                     <!-- YouTube Short 1 (Original) -->
-                    <div class="w-full max-w-[340px] rounded-lg overflow-hidden shadow-xl border-4 border-white">
+                    <div class="w-full max-w-[340px] rounded-lg overflow-hidden shadow-xl border-4 border-white" data-aos="fade-right" data-aos-delay="100">
                         <div class="aspect-[9/16] w-full">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/mTYtFJAc47Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                     
                     <!-- YouTube Short 2 (New) -->
-                    <div class="w-full max-w-[340px] rounded-lg overflow-hidden shadow-xl border-4 border-white">
+                    <div class="w-full max-w-[340px] rounded-lg overflow-hidden shadow-xl border-4 border-white" data-aos="fade-left" data-aos-delay="100">
                         <div class="aspect-[9/16] w-full">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/HDP7pPrDRbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
@@ -201,19 +209,19 @@
 
         <!-- 6. Content Example Video -->
         <section class="section-padding bg-gray-900">
-            <div class="max-w-7xl mx-auto text-center"> 
+            <div class="max-w-7xl mx-auto text-center" data-aos="fade-up"> 
                 <h3 class="text-3xl md:text-4xl font-bold mb-10">ทำให้คุณ และทีมงาน สามารถสร้างคอนเทนต์ออนไลน์ได้แบบนี้</h3>
                 
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto"> 
                     
                     <!-- Video 1 (Original 1) -->
-                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
+                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl" data-aos="zoom-in" data-aos-delay="100">
                          <iframe class="w-full h-full" src="https://www.youtube.com/embed/sOmo4Bcomyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     
                     <!-- Video 2 (Original 2) -->
-                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl">
+                    <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl" data-aos="zoom-in" data-aos-delay="200">
                          <iframe class="w-full h-full" src="https://www.youtube.com/embed/YerE9QAxMgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -226,12 +234,12 @@
             <div class="max-w-4xl mx-auto text-center">
                 <div class="space-y-6">
                     <!-- ปรับข้อความเน้น "คอร์ส" และ "เครื่องมือ AI" -->
-                    <div class="card p-8 rounded-xl"><p class="text-3xl font-semibold">คอร์สนี้มี <span class="highlight-text">เครื่องมือ AI</span> ที่ไม่สน ความหล่อ ความสวย</p></div>
-                    <div class="card p-8 rounded-xl"><p class="text-3xl font-semibold">คอร์สนี้มี <span class="highlight-text">เครื่องมือ AI</span> ที่ไม่สน ว่าคุณจะมีพื้นฐาน หรือไม่มีพื้นฐาน</p></div>
-                    <div class="card p-8 rounded-xl"><p class="text-3xl font-semibold">คอร์สนี้มี <span class="highlight-text">เครื่องมือ AI</span> ที่ไม่สน ว่าคุณ จะมีความรู้ หรือไม่มีความรู้</p></div>
-                    <div class="card p-8 rounded-xl"><p class="text-3xl font-semibold">คอร์สนี้บังคับผลลัพธ์ <span class="highlight-text">ไม่ว่า</span> คุณจะเป็นมือใหม่ หรือมือเก๋า</p>
+                    <div class="card p-8 rounded-xl" data-aos="zoom-in" data-aos-delay="50"><p class="text-3xl font-semibold">คอร์สนี้มี <span class="highlight-text">เครื่องมือ AI</span> ที่ไม่สน ความหล่อ ความสวย</p></div>
+                    <div class="card p-8 rounded-xl" data-aos="zoom-in" data-aos-delay="100"><p class="text-3xl font-semibold">คอร์สนี้มี <span class="highlight-text">เครื่องมือ AI</span> ที่ไม่สน ว่าคุณจะมีพื้นฐาน หรือไม่มีพื้นฐาน</p></div>
+                    <div class="card p-8 rounded-xl" data-aos="zoom-in" data-aos-delay="150"><p class="text-3xl font-semibold">คอร์สนี้มี <span class="highlight-text">เครื่องมือ AI</span> ที่ไม่สน ว่าคุณ จะมีความรู้ หรือไม่มีความรู้</p></div>
+                    <div class="card p-8 rounded-xl" data-aos="zoom-in" data-aos-delay="200"><p class="text-3xl font-semibold">คอร์สนี้บังคับผลลัพธ์ <span class="highlight-text">ไม่ว่า</span> คุณจะเป็นมือใหม่ หรือมือเก๋า</p>
                 </div>
-                <div class="mt-12 p-8 theme-bg rounded-xl shadow-2xl">
+                <div class="mt-12 p-8 theme-bg rounded-xl shadow-2xl" data-aos="fade-up" data-aos-delay="300">
                     <p class="text-2xl md:text-3xl font-bold leading-relaxed">มันจะนำพาให้คุณสำเร็จได้ทุกคน 100%<br>นี่คือการปฏิวัติการสอนงานของตัวแทนประกัน<br><span class="highlight-text">คอร์ส</span> ที่สามารถส่งต่อ ทำซ้ำ กันได้จริงๆ ด้วยเครื่องมือที่ทรงพลัง และใช้งานโคตรง่าย</p>
                 </div>
             </div>
@@ -239,11 +247,11 @@
 
         <!-- 8. Target Audience -->
         <section class="section-padding bg-gray-900">
-            <div class="max-w-6xl mx-auto">
+            <div class="max-w-6xl mx-auto" data-aos="fade-up">
                 <h3 class="text-4xl font-bold text-center mb-12">คอร์สนี้เหมาะกับใคร?</h3> <!-- เปลี่ยนจาก "ระบบ" -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <!-- Column for Agents -->
-                    <div>
+                    <div data-aos="fade-right" data-aos-delay="100">
                         <h4 class="text-2xl font-semibold mb-6 highlight-text border-b-2 border-amber-500 pb-2">สำหรับตัวแทน</h4>
                         <ul class="space-y-4 text-gray-300">
                             <li class="flex"><span class="text-green-400 mr-3">✔</span> ตัวแทนที่เชื่อว่า การหารายชื่อ มันไม่ควรจะจำกัดแค่ คนรู้จักในมือถือ</li>
@@ -254,7 +262,7 @@
                         </ul>
                     </div>
                     <!-- Column for Managers -->
-                    <div>
+                    <div data-aos="fade-left" data-aos-delay="100">
                         <h4 class="text-2xl font-semibold mb-6 highlight-text border-b-2 border-amber-500 pb-2">สำหรับผู้จัดการ</h4>
                         <ul class="space-y-4 text-gray-300">
                             <li class="flex"><span class="text-green-400 mr-3">✔</span> ผู้จัดการที่อยากได้คนรุ่นใหม่: แต่มีแต่วิธีการเก่าๆ ให้เขา จนเขาหนีไป</li>
@@ -270,15 +278,15 @@
 
         <!-- 9. What is Agent fluencer? -->
         <section class="section-padding">
-            <div class="max-w-5xl mx-auto">
+            <div class="max-w-5xl mx-auto" data-aos="fade-up">
                 <h3 class="text-4xl font-bold text-center mb-12">คอร์ส Agent fluencer คืออะไร?</h3> <!-- เปลี่ยนจาก "ระบบ" -->
                 <div class="grid md:grid-cols-2 gap-10">
-                    <div class="card p-8 rounded-lg">
+                    <div class="card p-8 rounded-lg" data-aos="fade-right" data-aos-delay="100">
                         <h4 class="text-2xl font-bold mb-4 highlight-text">สำหรับตัวแทน</h4>
                         <!-- ปรับข้อความ -->
                         <p class="text-gray-300">The Agent-fluencer คือ <span class="font-bold">"คอร์สออนไลน์"</span> ที่มาพร้อม <span class="font-bold">"ระบบสายพานการผลิต"</span> รายแรกของไทย ที่คุณสามารถส่งตัวแทนใหม่เข้ามา แล้วคอร์สนี้จะ "ปั้น" เขาออกมาเป็น Agent-fluencer ที่มีแบรนด์, ผลิตคอนเทนต์เป็น, และดึงดูดลูกค้าได้เอง โดยที่คุณไม่จำเป็นต้องเป็นคนเก่งมาก่อน</p>
                     </div>
-                    <div class="card p-8 rounded-lg">
+                    <div class="card p-8 rounded-lg" data-aos="fade-left" data-aos-delay="100">
                         <h4 class="text-2xl font-bold mb-4 highlight-text">สำหรับผู้จัดการ</h4>
                         <!-- ปรับข้อความ -->
                         <p class="text-gray-300">The Agent-fluencer คือการมอบ <span class="font-bold">"คอร์ส"</span> ที่มี <span class="font-bold">"โค้ชส่วนตัว (AI)"</span> ที่เก่งที่สุดในโลก ไปประกบลูกทีมของคุณทุกคนตลอด 24 ชั่วโมง เขาจะคอยโค้ชคำถามที่ถูกต้อง, ช่วยวางกลยุทธ์, และสร้างสรรค์ผลงาน... ทำให้ทุกคนในทีมของคุณ...สร้างช่องทางออนไลน์ได้ในแบบของตัวเอง</p>
@@ -289,13 +297,13 @@
         
         <!-- 10. The Metaphor -->
         <section class="section-padding theme-bg">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
                 <h3 class="text-3xl md:text-4xl font-bold mb-6">ถามจริงเถอะ... ขนาดพวกคุณเองยังโคตรรำคาญเวลาโดนยัดเยียดขาย...</h3>
                 <p class="text-2xl text-gray-200 mb-10">แล้วทำไมเราถึงยังทำแบบนั้นกับลูกค้าล่ะครับ? ทำไมยังสอนให้ทีมทำแบบนั้น คิดสิครับ!!</p>
                 <div class="p-8 border-4 border-dashed border-white rounded-lg">
                     <p class="text-2xl md:text-3xl font-semibold leading-relaxed highlight-text">"หยุดถือสวิงวิ่งไล่ล่าผีเสื้อ... <br>แล้วมาปลูกสวนดอกไม้หน้าบ้านให้ผีเสื้อบินเข้ามาหาเราเองดีกว่า"</p>
                 </div>
-                <div class="mt-10">
+                <div class="mt-10" data-aos="zoom-in" data-aos-delay="100">
                     
                     <img src="butterfly-garden.png" alt="ตัวแทนประกันกำลังรดน้ำสวนดอกไม้อย่างมีความสุข" class="rounded-lg shadow-xl mx-auto max-w-full h-auto">
                 </div>
@@ -304,11 +312,11 @@
 
         <!-- 11. Packages -->
         <section id="packages" class="section-padding bg-gray-900">
-            <div class="max-w-7xl mx-auto text-center">
+            <div class="max-w-7xl mx-auto text-center" data-aos="fade-up">
                 <h3 class="text-4xl font-bold mb-12">Package</h3>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <!-- Package 1 -->
-                    <div class="package-card rounded-xl p-8 flex flex-col">
+                    <div class="package-card rounded-xl p-8 flex flex-col" data-aos="zoom-in" data-aos-delay="50">
                         <h4 class="text-2xl font-bold highlight-text">แพ็กเกจ 1</h4>
                         <!-- ปรับชื่อแพ็กเกจ -->
                         <p class="text-xl font-semibold mt-2 text-white">The Agent-fluencer Course: Online Access</p>
@@ -336,7 +344,7 @@
                     </div>
                     
                     <!-- Package 2 -->
-                    <div class="package-card rounded-xl p-8 flex flex-col border-2 border-amber-500 shadow-2xl relative">
+                    <div class="package-card rounded-xl p-8 flex flex-col border-2 border-amber-500 shadow-2xl relative" data-aos="zoom-in" data-aos-delay="150">
                         <p class="absolute -top-4 left-1/2 -translate-x-1/2 theme-bg px-4 py-1 rounded-full text-sm font-bold">VIP BOOTCAMP</p>
                         <h4 class="text-2xl font-bold highlight-text">แพ็กเกจ 2</h4>
                         <p class="text-xl font-semibold mt-2 text-white">Agent-fluencer VIP Bootcamp: 1-Day Intensive</p>
@@ -366,7 +374,7 @@
                     </div>
 
                     <!-- Package 3 -->
-                    <div class="package-card rounded-xl p-8 flex flex-col">
+                    <div class="package-card rounded-xl p-8 flex flex-col" data-aos="zoom-in" data-aos-delay="250">
                         <h4 class="text-2xl font-bold highlight-text">แพ็กเกจ 3</h4>
                         <p class="text-xl font-semibold mt-2 text-white">Agent-fluencer Team Accelerator: In-House Workshop</p>
                         <p class="text-sm text-gray-400 mt-2 mb-6 h-12">(ปฏิวัติทีมของคุณ! สร้าง "สายพานการผลิต" ตัวแทนออนไลน์คุณภาพสูง ยกทีม!)</p>
@@ -399,7 +407,7 @@
 
         <!-- 12. Final Call to Action -->
         <section class="section-padding gradient-bg">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
                 <h3 class="text-4xl font-bold mb-6">โลกมันไม่รอเราแล้วนะครับ</h3>
                 <p class="text-lg text-gray-300 mb-8">ในขณะที่เรายังลังเล ยังกลัว ยังหาข้ออ้าง... ทีมคู่แข่งของคุณอาจจะกำลังติดอาวุธ AI ให้กับทีมงานของเขาแล้ว... พวกเขากำลังสร้าง "สวนดอกไม้" ที่จะดึงดูดลูกค้าและคนเก่งๆ ไปจากเราทุกวัน</p>
                 <p class="text-xl font-semibold text-white mb-4">The Agent-fluencer ไม่ใช่แค่ "ทางเลือก"... <span class="highlight-text">แต่มันคือ "ทางรอด" ของทีมคุณในยุคนี้ครับ</span></p>
@@ -417,6 +425,18 @@
     <footer class="text-center py-6 bg-gray-900 text-gray-500">
         <p>&copy; 2025 นักรบกรมธรรม์. All Rights Reserved.</p>
     </footer>
+
+    <!-- === 2. ADDED AOS SCRIPT === -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // Animation happens only once
+        duration: 800, // Animation duration in ms
+        offset: 100, // Trigger animation when element is 100px from viewport
+        easing: 'ease-in-out', // Animation easing
+      });
+    </script>
+    <!-- === END AOS SCRIPT === -->
 
 </body>
 </html>
